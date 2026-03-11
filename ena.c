@@ -1,6 +1,10 @@
 #include <stdio.h>
 
 int main(){
-    printf("Hello World! \n");
+    int i = 0;
+    int a = 10/i;
+
+    printf("%d\n",a);
+
     return 0;
 }
