@@ -37,7 +37,7 @@ int cifra(){
 
 int spremeni(int st){
     int count = 0;
-    //printf("vsota: %d st: %d in se skp: ",vsota,st);
+    printf("vsota: %d st: %d in se skp: ",vsota,st);
     if(st + vsota > 99){
         if(vsota != 0)count++;
         vsota = vsota + st - 100;
@@ -51,10 +51,11 @@ int spremeni(int st){
         while(vsota <= 0){
             vsota += 100;
             count++;
-            printf("v: %d   %d\n",vsota, count);
+            //printf("v: %d   %d\n",vsota, count);
         }
     }else{
         vsota = vsota + st;
+        if(vsota == 0){count++;}
     }
     if(vsota == 100){
         vsota = 0;
