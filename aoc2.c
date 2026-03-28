@@ -97,7 +97,7 @@ int checkKos(long size, long del, long a){
     if(a == 0){
         a = specialCheck(b);
     }
-    return (a == 0)? 1 : 0;
+    return !a? 1 : 0;
 }
 
 int specialCheck(long b){
